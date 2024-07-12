@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register form</title>
+</head>
+
+<body>
+    <section id="main">
+        <div>
+            <h2 id="title">রেজিস্ট্রেশন করুন</h2>
+
+            <form>
+                <!-- name, mobile,password -->
+                <div class="container-row">
+                    <div class="container">
+                        <label for="name"><span class="require">*</span> Name</label> <br>
+                        <input type="text" id="name" class="full-width-input" required>
+                    </div>
+
+                    <div class="container">
+                        <label for="mobile"><span class="require">*</span> Mobile</label> <br>
+                        <input type="tel" id="mobile" class="full-width-input" required>
+                    </div>
+
+                    <div class="container">
+                        <label for="password"><span class="require">*</span> Password</label> <br>
+                        <input type="password" id="password" class="full-width-input" required>
+                    </div>
+                </div>
+
+                <!-- Email, Emergency Contact, Home District -->
+                <div class="container-row">
+                    <div class="container">
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="email" class="full-width-input">
+                    </div>
+
+                    <div class="container">
+                        <label for="contact">Emergency Contact</label> <br>
+                        <input type="tel" id="contact" class="full-width-input">
+                    </div>
+
+                    <div class="container">
+                        <label for="district"><span class="require">*</span> Home District</label> <br>
+                        <select id="district" class="full-width-input" required>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Study In (Diploma Engineering), Institute Name -->
+                <div class="container-row">
+
+                    <div class="container">
+                        <label for="study">Study In (Diploma Engineering)</label> <br>
+                        <input type="text" id="study" class="full-width-input">
+                    </div>
+
+                    <div class="container">
+                        <label for="institute">Institute Name</label> <br>
+                        <input type="text" id="institute" class="full-width-input">
+                    </div>
+                </div>
+
+                <!-- Technology, Semester (8th), Shift -->
+                <div class="container-row">
+
+                    <div class="container">
+                        <label for="technology">Technology</label> <br>
+                        <select id="technology" class="full-width-input">
+                            <option value="Computer">Computer</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Power">Power</option>
+                        </select>
+                    </div>
+
+                    <div class="container">
+                        <label for="semester">Semester (8th)</label> <br>
+                        <input type="text" id="semester" class="full-width-input">
+                    </div>
+
+                    <div class="container">
+                        <label for="shift">Shift</label> <br>
+                        <select id="shift" class="full-width-input">
+                            <option value="First">First</option>
+                            <option value="Second">Second</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Present Address, Permanent Address -->
+                <div class="container-row">
+                    <div class="container">
+                        <label for="present-address">Present Address</label> <br>
+                        <textarea id="present-address" class="full-width-input"></textarea>
+                    </div>
+
+                    <div class="container">
+                        <label for="permanent-address">Permanent Address</label> <br>
+                        <textarea id="permanent-address" class="full-width-input"></textarea>
+                    </div>
+                </div>
+
+                <div class="container-row">
+                    <div class="container">
+                        <label for="comment">Comment</label> <br>
+                        <textarea id="comment" class="full-width-input"></textarea>
+                    </div>
+                </div>
+
+                <div id="btn-container">
+                    <button id="btn-register" type="submit">রেজিস্ট্রেশন</button>
+                    <button id="btn-login" type="submit">লগ ইন</button>
+                    <button id="btn-reset" type="reset">রিসেট</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
